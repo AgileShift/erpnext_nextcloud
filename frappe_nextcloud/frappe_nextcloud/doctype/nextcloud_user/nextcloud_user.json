@@ -1,0 +1,109 @@
+{
+ "actions": [
+  {
+   "action": "frappe_nextcloud.frappe_nextcloud.doctype.nextcloud_user.actions.sync_all",
+   "action_type": "Server Action",
+   "label": "Sync All"
+  },
+  {
+   "action": "frappe_nextcloud.frappe_nextcloud.doctype.nextcloud_user.actions.discover",
+   "action_type": "Server Action",
+   "label": "Discover"
+  }
+ ],
+ "autoname": "format:NC-{email}",
+ "creation": "2020-07-12 10:09:11.873259",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "section_break_1",
+  "email",
+  "password",
+  "column_break_1",
+  "carddav_url",
+  "section_break_2",
+  "carddav_org_field"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "If will be available for sync options in contacts.",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable"
+  },
+  {
+   "description": "Nextcloud User whose data are to be synced.",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "description": "App Password of the Account.",
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "App Password",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "description": "Nextcloud CardDAV URL",
+   "fieldname": "carddav_url",
+   "fieldtype": "Data",
+   "label": "CardDAV URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "This field is used for the ORG Value in the CardDav file and is set as the \"Company\" Value on the CardDav clients.",
+   "fieldname": "carddav_org_field",
+   "fieldtype": "Data",
+   "label": "CardDav Org Value"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Customer",
+   "link_fieldname": "nextcloud_user"
+  }
+ ],
+ "modified": "2020-09-01 12:37:59.157856",
+ "modified_by": "Administrator",
+ "module": "Frappe Nextcloud",
+ "name": "Nextcloud User",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

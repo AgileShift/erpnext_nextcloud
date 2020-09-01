@@ -1,0 +1,19 @@
+[general]
+status_path = ""
+
+[pair my_contacts]
+a = "my_contacts_frappe"
+b = "my_contacts_nextcloud"
+collections = ["from a", "from b"]
+conflict_resolution = "a wins"
+
+[storage my_contacts_frappe]
+type = "filesystem"
+path = ""
+fileext = ".vcf"
+
+[storage my_contacts_nextcloud]
+type = "carddav"
+username.fetch = ["prompt", "Username To Sync"]
+password.fetch = ["prompt", "Password for User"]
+url = ""
