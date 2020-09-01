@@ -48,15 +48,14 @@ def sync_all(doc):
     vdirsyncer_local_storage_path = get_vdirsyncer_local_storage_path(nc_user.name)  # TODO: Default address book only.
     command = ['vdirsyncer', '-c', get_vdirsyncer_config_file_path(nc_user.name), 'sync']
 
+    # We don't create a carddav if no mobile exists. Select new and old customers.
     customers_to_sync = frappe.get_all('Customer', fields=[
         'name', 'customer_name', 'customer_group', 'mobile_no', 'email_id', 'nextcloud_contact_id'
-    ], filters={'sync_with_nextcloud': True, 'nextcloud_user': nc_user.name})
+    ], filters={'sync_with_nextcloud': True, 'nextcloud_user': nc_user.name, 'mobile_no': ('is', 'set')})
 
     for customer in customers_to_sync:
 
-        print(customer)
-
-        if not customer.nextcloud_contact_id:  # Create the Unique UUID
+        if not customer.nextcloud_contact_id:  # Create the Unique UUID if new
             nextcloud_contact_id = str(uuid.uuid4())
             customer.nextcloud_contact_id = nextcloud_contact_id
 
@@ -114,7 +113,7 @@ def sync_all(doc):
         print('Configurando Credenciales')
         command_credentials = '{0}\n{1}\n'.format(nc_user.email, nc_user.get_password())
 
-        run(command, stdout=PIPE, stderr=STDOUT, text=True, input=command_credentials)
+        # run(command, stdout=PIPE, stderr=STDOUT, text=True, input=command_credentials)
     except Exception as e:
         print(e)
         frappe.throw('Error Ver logs')
