@@ -24,8 +24,6 @@ class NextcloudUser(Document):
         config_file_local_storage_path = 'path = "' + vdirsyncer_user_local_storage_path + '/"'
         config_file_remote_storage_url = 'url = "' + self.carddav_url + '"'
 
-        print(vdirsyncer_user_local_storage_path)
-
         # Setting up template
         with open(vdirsyncer_config_template_file, 'r') as config_template_file:
             template_data = config_template_file.read()  # Reading template

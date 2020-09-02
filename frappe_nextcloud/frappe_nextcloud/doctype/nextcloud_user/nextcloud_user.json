@@ -1,6 +1,18 @@
 {
  "actions": [
   {
+   "action": "frappe_nextcloud.frappe_nextcloud.doctype.nextcloud_user.actions.create_carddav_files",
+   "action_type": "Server Action",
+   "group": "Files",
+   "label": "Create CardDav's"
+  },
+  {
+   "action": "frappe_nextcloud.frappe_nextcloud.doctype.nextcloud_user.actions.delete_carddav_files",
+   "action_type": "Server Action",
+   "group": "Files",
+   "label": "Delete CardDav's"
+  },
+  {
    "action": "frappe_nextcloud.frappe_nextcloud.doctype.nextcloud_user.actions.sync_all",
    "action_type": "Server Action",
    "label": "Sync All"
@@ -84,7 +96,7 @@
    "link_fieldname": "nextcloud_user"
   }
  ],
- "modified": "2020-09-01 12:37:59.157856",
+ "modified": "2020-09-01 23:12:24.050873",
  "modified_by": "Administrator",
  "module": "Frappe Nextcloud",
  "name": "Nextcloud User",

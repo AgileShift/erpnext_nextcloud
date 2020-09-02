@@ -1,4 +1,6 @@
 """ Utils for frappe nextcloud module """
+import json
+
 import frappe
 from frappe.utils import get_site_path, get_bench_path
 
@@ -27,3 +29,9 @@ def get_vdirsyncer_local_storage_path(*path):
 def get_vdirsyncer_config_template_file_path():
     """ Get absolute vdirsyncer config template file. This is to create configurations for each account """
     return frappe.get_app_path('Frappe Nextcloud', 'vdirsyncer.config_template')
+
+
+def get_nc_user_from_doc(doc):
+    """ Get the NC-User from a payload """
+    doc = json.loads(doc)
+    return frappe.get_doc('Nextcloud User', doc.get('name'))
