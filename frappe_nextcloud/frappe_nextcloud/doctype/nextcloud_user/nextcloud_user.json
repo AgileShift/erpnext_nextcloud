@@ -96,7 +96,7 @@
    "link_fieldname": "nextcloud_user"
   }
  ],
- "modified": "2020-09-01 23:12:24.050873",
+ "modified": "2020-09-02 22:08:41.280574",
  "modified_by": "Administrator",
  "module": "Frappe Nextcloud",
  "name": "Nextcloud User",
@@ -106,12 +106,9 @@
    "create": 1,
    "delete": 1,
    "email": 1,
-   "export": 1,
    "print": 1,
    "read": 1,
-   "report": 1,
-   "role": "Administrator",
-   "share": 1,
+   "role": "System Manager",
    "write": 1
   }
  ],
