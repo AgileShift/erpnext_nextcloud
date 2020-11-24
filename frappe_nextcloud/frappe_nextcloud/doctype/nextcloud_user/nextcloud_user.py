@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-# Copyright (c) 2020, Agile Shift I/O and contributors
-# For license information, please see license.txt
 from frappe.model.document import Document
 from frappe_nextcloud.frappe_nextcloud.utils import get_vdirsyncer_config_file_path, get_vdirsyncer_path, \
     get_vdirsyncer_config_template_file_path, get_vdirsyncer_local_storage_path
