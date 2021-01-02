@@ -4,11 +4,11 @@ from . import __version__ as app_version
 
 app_name = "frappe_nextcloud"
 app_title = "Frappe Nextcloud"
-app_publisher = "Agile Shift I/O"
+app_publisher = "Agile Shift"
 app_description = "Frappe & ERPNext Integrations: NextCloud CardDav"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "contacto@agileshift.io"
+app_email = "contacto@gruporeal.org"
 app_license = "MIT"
 
 # Includes in <head>

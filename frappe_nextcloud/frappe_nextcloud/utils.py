@@ -4,6 +4,7 @@ import json
 import frappe
 from frappe.utils import get_site_path, get_bench_path
 
+# TODO: get_bench_relative_path() to use less code!
 
 def get_vdirsyncer_path(*path):
     """ Return absolute folder path unique for each site and NC-User. """
@@ -33,5 +34,5 @@ def get_vdirsyncer_config_template_file_path():
 
 def get_nc_user_from_doc(doc):
     """ Get the NC-User from a payload """
-    doc = json.loads(doc)
+    doc = frappe.parse_json(doc)
     return frappe.get_doc('Nextcloud User', doc.get('name'))
