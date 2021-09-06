@@ -1,3 +1,4 @@
 frappe
+erpnext
 vdirsyncer
 vobject

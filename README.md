@@ -1,8 +1,13 @@
-## Frappe & NextCloud
+## ERPNext & NextCloud
 
-Frappe & ERPNext Integration with NextCloud CardDav Server
+**[ERPNext](https://github.com/frappe/erpnext)** Integration with NextCloud Contact App
+Using 
 
-Under development.
+### Customizations to ERPNext
+- **Customer** Doctype is changed to hold Nextcloud Contact ID
+
+
+### Description
 
 Its Export Contact Doctype to .vcf files
 and then push into remote server.
@@ -11,7 +16,3 @@ and then push into remote server.
 1. Create a NextCloud settings to allow for a custom config template for each user.
 2. Hooks on the customer or contact side to sync each time a new or update occurs
 3. Better background job sync
-
-#### License
-
-MIT

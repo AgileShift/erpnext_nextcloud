@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from . import __version__ as app_version
 
-app_name = "frappe_nextcloud"
-app_title = "Frappe Nextcloud"
+app_name = "erpnext_nextcloud"
+app_title = "ERPNext NextCloud"
 app_publisher = "Agile Shift"
-app_description = "Frappe & ERPNext Integrations: NextCloud CardDav"
+app_description = "Frappe & ERPNext Integrations with NextCloud Contacts"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "contacto@gruporeal.org"
@@ -15,12 +14,12 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/frappe_nextcloud/css/frappe_nextcloud.css"
-# app_include_js = "/assets/frappe_nextcloud/js/frappe_nextcloud.js"
+# app_include_css = "/assets/erpnext_nextcloud/css/erpnext_nextcloud.css"
+# app_include_js = "/assets/erpnext_nextcloud/js/erpnext_nextcloud.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/frappe_nextcloud/css/frappe_nextcloud.css"
-# web_include_js = "/assets/frappe_nextcloud/js/frappe_nextcloud.js"
+# web_include_css = "/assets/erpnext_nextcloud/css/erpnext_nextcloud.css"
+# web_include_js = "/assets/erpnext_nextcloud/js/erpnext_nextcloud.js"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -47,7 +46,7 @@ app_license = "MIT"
 # }
 
 # Website user home page (by function)
-# get_website_user_home_page = "frappe_nextcloud.utils.get_home_page"
+# get_website_user_home_page = "erpnext_nextcloud.utils.get_home_page"
 
 # Generators
 # ----------
@@ -58,14 +57,14 @@ app_license = "MIT"
 # Installation
 # ------------
 
-# before_install = "frappe_nextcloud.install.before_install"
-# after_install = "frappe_nextcloud.install.after_install"
+# before_install = "erpnext_nextcloud.install.before_install"
+# after_install = "erpnext_nextcloud.install.after_install"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "frappe_nextcloud.notifications.get_notification_config"
+# notification_config = "erpnext_nextcloud.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -96,39 +95,39 @@ app_license = "MIT"
 
 # scheduler_events = {
 # 	"all": [
-# 		"frappe_nextcloud.tasks.all"
+# 		"erpnext_nextcloud.tasks.all"
 # 	],
 # 	"daily": [
-# 		"frappe_nextcloud.tasks.daily"
+# 		"erpnext_nextcloud.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"frappe_nextcloud.tasks.hourly"
+# 		"erpnext_nextcloud.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"frappe_nextcloud.tasks.weekly"
+# 		"erpnext_nextcloud.tasks.weekly"
 # 	]
 # 	"monthly": [
-# 		"frappe_nextcloud.tasks.monthly"
+# 		"erpnext_nextcloud.tasks.monthly"
 # 	]
 # }
 
 # Testing
 # -------
 
-# before_tests = "frappe_nextcloud.install.before_tests"
+# before_tests = "erpnext_nextcloud.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "frappe_nextcloud.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "erpnext_nextcloud.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "frappe_nextcloud.task.get_dashboard_data"
+# 	"Task": "erpnext_nextcloud.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled

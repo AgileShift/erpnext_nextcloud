@@ -4,15 +4,15 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include frappe_nextcloud *.css
-recursive-include frappe_nextcloud *.csv
-recursive-include frappe_nextcloud *.html
-recursive-include frappe_nextcloud *.ico
-recursive-include frappe_nextcloud *.js
-recursive-include frappe_nextcloud *.json
-recursive-include frappe_nextcloud *.md
-recursive-include frappe_nextcloud *.png
-recursive-include frappe_nextcloud *.py
-recursive-include frappe_nextcloud *.svg
-recursive-include frappe_nextcloud *.txt
-recursive-exclude frappe_nextcloud *.pyc
+recursive-include erpnext_nextcloud *.css
+recursive-include erpnext_nextcloud *.csv
+recursive-include erpnext_nextcloud *.html
+recursive-include erpnext_nextcloud *.ico
+recursive-include erpnext_nextcloud *.js
+recursive-include erpnext_nextcloud *.json
+recursive-include erpnext_nextcloud *.md
+recursive-include erpnext_nextcloud *.png
+recursive-include erpnext_nextcloud *.py
+recursive-include erpnext_nextcloud *.svg
+recursive-include erpnext_nextcloud *.txt
+recursive-exclude erpnext_nextcloud *.pyc
