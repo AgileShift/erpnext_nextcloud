@@ -9,7 +9,7 @@ from erpnext_nextcloud import __version__ as version
 setup(
 	name="erpnext_nextcloud",
 	version=version,
-	description="ERPNext Integration with Nextcloud Contact App",
+	description="Frappe & ERPNext Integrations with Nextcloud Contacts",
 	author="Agile Shift",
 	author_email="contacto@gruporeal.org",
 	packages=find_packages(),

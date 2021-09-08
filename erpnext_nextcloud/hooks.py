@@ -3,7 +3,7 @@ from . import __version__ as app_version
 app_name = "erpnext_nextcloud"
 app_title = "ERPNext Nextcloud"
 app_publisher = "Agile Shift"
-app_description = "ERPNext Integration with Nextcloud Contact App"
+app_description = "Frappe & ERPNext Integrations with Nextcloud Contacts"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "contacto@gruporeal.org"
@@ -146,26 +146,26 @@ override_doctype_class = {
 # User Data Protection
 # --------------------
 
-user_data_fields = [
-	{
-		"doctype": "{doctype_1}",
-		"filter_by": "{filter_by}",
-		"redact_fields": ["{field_1}", "{field_2}"],
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_2}",
-		"filter_by": "{filter_by}",
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_3}",
-		"strict": False,
-	},
-	{
-		"doctype": "{doctype_4}"
-	}
-]
+# user_data_fields = [
+# 	{
+# 		"doctype": "{doctype_1}",
+# 		"filter_by": "{filter_by}",
+# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_2}",
+# 		"filter_by": "{filter_by}",
+# 		"partial": 1,
+# 	},
+# 	{
+# 		"doctype": "{doctype_3}",
+# 		"strict": False,
+# 	},
+# 	{
+# 		"doctype": "{doctype_4}"
+# 	}
+# ]
 
 # Authentication and authorization
 # --------------------------------
@@ -173,4 +173,3 @@ user_data_fields = [
 # auth_hooks = [
 # 	"erpnext_nextcloud.auth.validate"
 # ]
-

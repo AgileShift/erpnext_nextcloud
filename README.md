@@ -1,16 +1,15 @@
 ## ERPNext & Nextcloud
 
 **[ERPNext](https://github.com/frappe/erpnext)** Integration with Nextcloud Contact App
-Using 
 
 ### Customizations to ERPNext
-- **Customer** Doctype is changed to hold Nextcloud Contact ID
+- Custom Class for **Contact** and **Customer**.
+- **Contact** Doctype is changed to hold Nextcloud Contact ID
 
 
 ### Description
 
-Its Export Contact Doctype to .vcf files
-and then push into remote server.
+Its Export Contact Doc to .vcf file and then push into remote server.
 
 # TODO:
 1. Create a Nextcloud settings to allow for a custom config template for each user.
