@@ -1,9 +1,9 @@
 from . import __version__ as app_version
 
 app_name = "erpnext_nextcloud"
-app_title = "Erpnext Nextcloud"
+app_title = "ERPNext Nextcloud"
 app_publisher = "Agile Shift"
-app_description = "ERPNext Integration with NextCloud Contact App"
+app_description = "ERPNext Integration with Nextcloud Contact App"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "contacto@gruporeal.org"
@@ -81,20 +81,21 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Contact": "erpnext_nextcloud.erpnext_nextcloud.custom.contact.SyncedContact",
+	"Customer": "erpnext_nextcloud.erpnext_nextcloud.custom.customer.SyncedCustomer",
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
 # doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
+#   "*": {
+#   	"on_update": "method",
+#   	"on_cancel": "method",
+#   	"on_trash": "method"
+#  },
 # }
 
 # Scheduled Tasks

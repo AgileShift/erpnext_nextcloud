@@ -1,0 +1,109 @@
+{
+ "actions": [
+  {
+   "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.sync_all",
+   "action_type": "Server Action",
+   "group": "Server",
+   "label": "Sync"
+  },
+  {
+   "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.discover",
+   "action_type": "Server Action",
+   "group": "Server",
+   "label": "Discover"
+  },
+  {
+   "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.create_config_file",
+   "action_type": "Server Action",
+   "label": "Create Config File"
+  }
+ ],
+ "creation": "2021-09-06 11:38:11.223320",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "section_break_2",
+  "email",
+  "password",
+  "column_break_3",
+  "carddav_url",
+  "section_break_5",
+  "carddav_org_field"
+ ],
+ "fields": [
+  {
+   "description": "Nextcloud CardDAV URL.",
+   "fieldname": "carddav_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CardDAV URL",
+   "reqd": 1
+  },
+  {
+   "description": "Nextcloud User whose data are to be synced.",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "description": "App Password of the Account.",
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "This field is used for the ORG Value in the CardDav file and is set as the \"Company\" Value on the CardDav clients.",
+   "fieldname": "carddav_org_field",
+   "fieldtype": "Data",
+   "label": "CardDav Org Value"
+  },
+  {
+   "default": "0",
+   "description": "Is available to sync contacts.",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-09-06 21:57:05.078831",
+ "modified_by": "Administrator",
+ "module": "ERPNext Nextcloud",
+ "name": "Nextcloud Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
