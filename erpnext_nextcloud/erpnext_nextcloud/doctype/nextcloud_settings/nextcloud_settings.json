@@ -3,14 +3,26 @@
   {
    "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.sync_all",
    "action_type": "Server Action",
-   "group": "Server",
+   "group": "Nextcloud",
    "label": "Sync"
   },
   {
    "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.discover",
    "action_type": "Server Action",
-   "group": "Server",
+   "group": "Nextcloud",
    "label": "Discover"
+  },
+  {
+   "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.create_vcards",
+   "action_type": "Server Action",
+   "group": "Cards",
+   "label": "Create vCards"
+  },
+  {
+   "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.delete_local_vcards",
+   "action_type": "Server Action",
+   "group": "Cards",
+   "label": "Delete Local vCards"
   },
   {
    "action": "erpnext_nextcloud.erpnext_nextcloud.doctype.nextcloud_settings.actions.create_config_file",
@@ -86,7 +98,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2021-09-06 21:57:05.078831",
+ "modified": "2021-09-09 10:53:37.838455",
  "modified_by": "Administrator",
  "module": "ERPNext Nextcloud",
  "name": "Nextcloud Settings",

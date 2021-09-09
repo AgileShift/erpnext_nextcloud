@@ -1,4 +1,4 @@
-from erpnext_nextcloud.erpnext_nextcloud.utils import get_vdirsyncer_status_path, get_vdirsyncer_storage_path, get_vdirsyncer_config_file_path
+from erpnext_nextcloud.erpnext_nextcloud.vdirsyncer import get_vdirsyncer_status_path, get_vdirsyncer_storage_path, get_vdirsyncer_config_file_path
 from frappe.model.document import Document
 
 

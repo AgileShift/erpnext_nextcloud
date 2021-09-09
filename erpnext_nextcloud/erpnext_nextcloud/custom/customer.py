@@ -11,4 +11,5 @@ class SyncedCustomer(Customer):
         else:
             contact = frappe.get_cached_doc('Contact', self.customer_primary_contact)
             contact.set_names(full_name=self.customer_name)
+            contact.flags.ignore_mandatory = True
             contact.save(ignore_permissions=True, ignore_version=True)  # Calls on_update and creates vCard
