@@ -12,18 +12,18 @@ class NextcloudSettings(Document):
         [general]
         status_path = "{vdirsyncer_status_path}"
         
-        [pair my_contacts]
-        a = "my_contacts_frappe"
-        b = "my_contacts_nextcloud"
+        [pair frappe_and_nextcloud]
+        a = "contacts_in_frappe"
+        b = "contacts_in_nextcloud"
         collections = ["from a", "from b"]
         conflict_resolution = "a wins"
         
-        [storage my_contacts_frappe]
+        [storage contacts_in_frappe]
         type = "filesystem"
         path = "{vdirsyncer_storage_path}"
         fileext = ".vcf"
         
-        [storage my_contacts_nextcloud]
+        [storage contacts_in_nextcloud]
         type = "carddav"
         username = "{email}"
         password = "{password}"

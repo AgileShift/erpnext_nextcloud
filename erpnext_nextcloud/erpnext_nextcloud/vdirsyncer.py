@@ -31,7 +31,7 @@ def get_vdirsyncer_config_file_path():
     return get_vdirsyncer_path('vdirsyncer.config', is_folder=False)
 
 
-def execute_command_in_shell(cmd, auto_yes=False):
+def execute_vdirsyncer_in_shell(cmd, auto_yes=False):
     # TODO: Rename this def, and make more human workable
     config_file = get_vdirsyncer_config_file_path()
     vdirsyncer_exec = os.path.join(sys.exec_prefix, 'bin', 'vdirsyncer')
@@ -40,8 +40,6 @@ def execute_command_in_shell(cmd, auto_yes=False):
         process = pexpect.run('/bin/bash -c "yes | {} -c {} {}"'.format(vdirsyncer_exec, config_file, cmd), encoding='utf-8')
     else:
         process = pexpect.run('{} -c {} {}"'.format(vdirsyncer_exec, config_file, cmd), encoding='utf-8')
-
-    print(process)
 
     frappe.msgprint(
         msg="<pre style='background: #36414C; color: white; padding: 9px; border-radius: 5px;'><code>{}</code></pre>".format(process),
