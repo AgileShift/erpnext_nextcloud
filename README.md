@@ -18,6 +18,9 @@ This app lets you Sync Contacts To a Nextcloud Account.
 
 Create a .vcf file for each **Contact** Doc if it has email or phone, then uses **vdirsyncer** to syncs with remote nextcloud server.
 
+* **Contact** first_name and last_name are always updated if a linked **Customer** is updated.
+
+
 The following configuration is set in **Nextcloud Settings** Single Doctype:
 - Nextcloud URL
 - Email Account
