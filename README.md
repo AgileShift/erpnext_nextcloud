@@ -1,17 +1,29 @@
 ## ERPNext & Nextcloud
 
+This app lets you Sync Contacts To a Nextcloud Account.
+
 **[ERPNext](https://github.com/frappe/erpnext)** Integration with Nextcloud Contact App
 
-### Customizations to ERPNext
+
+### App Includes:
+- Nextcloud Settings Doctype
+
+
+### Customizations to Frappe and ERPNext
 - Custom Class for **Contact** and **Customer**.
-- **Contact** Doctype is changed to hold Nextcloud Contact ID
+- **Contact** Doctype is changed to hold Nextcloud Contact ID.
 
 
 ### Description
 
-Its Export Contact Doc to .vcf file and then push into remote server.
+Create a .vcf file for each **Contact** Doc if it has email or phone, then uses **vdirsyncer** to syncs with remote nextcloud server.
+
+The following configuration is set in **Nextcloud Settings** Single Doctype:
+- Nextcloud URL
+- Email Account
+- App password(Can be account password) 
+
+# WORK IN PROGRESS
 
 # TODO:
-1. Create a Nextcloud settings to allow for a custom config template for each user.
-2. Hooks on the customer or contact side to sync each time a new or update occurs
 3. Better background job sync
