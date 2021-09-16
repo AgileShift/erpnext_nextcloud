@@ -21,6 +21,8 @@ class SyncedContact(Contact):
 
     def on_update(self):
         """ Create/Update vCard """
+        # TODO: Update Customer after mobile or email is edited: Eg: https://github.com/frappe/erpnext/pull/26799/files
+
         if self.phone_nos or self.email_ids:
             create_vcard(self, get_vdirsyncer_address_book_path())  # TODO: Set custom address_book if requested?
             # frappe.msgprint('vCard Created!', alert=True) # TODO: Habilitate this?
